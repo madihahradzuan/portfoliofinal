@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My personal portfolio </title>
+	<link rel="stylesheet" href="styleportfolio.css"> 
+	<script src="https://kit.fontawesome.com/4b75ca2f66.js" crossorigin="anonymous"></script>
+	<script src="portfolio.js"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+		<img src="logo1.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars"onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>Welcome to my Portfolio</p>
+			<h1>Hi, Im Madihah from Informatic Media</h>
+		</div>
+	</div>
+</div>
+
+<!-----about------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="madikorea.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>Hye! I am Madihah binti Mohd Radzuan. Madi for short. Welcome to my website! 
+				I was born and raised in Kuala Lumpur. I am the eldest sister among my siblings. 
+				I was born on April 12th at Kuala Lumpur Hospital. I have 4 younger brothers and 1 younger sister. 
+				My mom is working as a nurse at Hospital Kuala Lumpur while my dad is a military officer. Throughout my life, I love to do arts. 
+				My parents bought me a bunch of art supplies instead of toys when I was small. The interest in arts grows together with me as time goes by.
+				I hope you enjoy scrolling the website as I do.</p>
+				<br>
+				<br>
+				<div class="tab">
+				<button class="tablinks" onclick="openTab(event, 'Skills')">Skill</button>
+				<button class="tablinks" onclick="openTab(event, 'Education')">Education</button> 
+				</div>
+			<br>
+			<br>
+			<div id="Skills" class="tabcontent">
+				<h3>Handcrafting</h3>
+				<p>Embroidery and Crocheting</p>
+				<br>
+				<h3>Photography</h3>
+				<p>Wedding, pre-convocation photoshoot</p>
+				<br>
+				<h3>Painting</h3>
+				<p>Using all kind of mediums</p>
+			</div>
+
+			<div id="Education" class="tabcontent">
+				<h3>2012 - 2016</h3>
+				<p>SMK Puteri Titiwangsa</p>
+				<br>
+				<h3>2017 - 2019</h3>
+				<p>Diploma in Civil Engineering at Politeknik Merlimau Melaka</p>
+				<br>
+				<h3>2022 - current</h3>
+				<p>Degree in Informatic Technology at UNISZA</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-----projects------->
+<div id="projects">
+	<div class="container">
+		<center><h1 class="sub-title">My Projects</h1></center>
+		<div class="projects-list">
+			<div>
+				<i class="fa-solid fa-scissors" style="color: #303031;"></i>
+				<h2>Embroidery</h2>
+				<p>The art or pastime of embroidering cloth.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-heart" style="color: #303031;"></i>
+				<h2>Crocheting</h2>
+				<p>A handicraft in which yarn is made up into a textured fabric by means of a hooked needle.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-camera" style="color: #303031;"></i>
+				<h2>Photography</h2>
+				<p>The art or process of producing images by the action of radiant energy and especially light on a sensitive surface</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-paintbrush" style="color: #303031;"></i>
+				<h2>Painting</h2>
+				<p>The action or skill of using paint, either in a picture or as decoration.</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<!-----portfolio------->
+<div id="portfolio">
+	<div class="container">
+		<center><h1 class="sub-title">My works</h1></center>
+		<div class="work-list">
+		<center>
+			<div class="work">
+			<div class="layer">
+					<h3>Photography</h3>
+					<p>wedding</p>
+				<img src="1.png">
+				<img src="2.png">
+			</div>
+			<br>
+			<div class="work">
+				<img src="4.png">
+				<img src="3.png">
+			</div>
+			<br>
+			<div class="work">
+				<img src="5.png">
+				<img src="6.png">
+				<h3>Handcrafting</h3>
+					<p>Embroidery and Crocheting</p>
+				<img src="7.png">
+				<img src="8.png">
+			</div>
+					<h3>Painting</h3>
+					<p>sing all kind of mediums</p>
+				<img src="9.png">
+			</div>
+		</center>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-----contact------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-col-1">
+			<div class="contact-left">
+				<h1 class=sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane" style="color: #494a4b;"></i>madihahradzuan@gmail.com</p>
+				<p><i class="fa-solid fa-phone" style="color: #3a3a3b;"></i>+60192864713</p>
+			<div class="social-icons">
+				<a href="https://facebook.com/"><i class="fa-brands fa-facebook" style="color: #575757;"></i></a>
+				<a href="https://instagram.com/"><i class="fa-brands fa-instagram" style="color: #575757;"></i></a>
+			</div>
+			<a href="MY-CV.pdf" download class="button">Download CV</a>
+			</div>
+			<br>
+			<br>
+			</div>
+			<div class="contact-col-2">
+				<div class="contact-right">
+					<form>
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<input type="text" name="Message" placeholder="Your Message" required>
+					<button type="Submit" class="button">Submit</button>
+					</form>
+				</div>
+		</div>
+	</div>
+	<div class="copyright">
+</div>
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+var sidemenu = document.getElementsById("sidemenu");
+function openmenu(){
+	sidemenu.style.right="0";
+	}
+function closemenu(){
+	sidemenu.style.right="-200px";
+	}
+}
+</script>
+</body>
+</html>
