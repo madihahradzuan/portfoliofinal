@@ -1,0 +1,319 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'winkle regular', sana-serif;
+	box-sizing: border-box;
+}
+body{
+	background: #FFECE3;
+	color: #4D4D4D;  
+}
+#header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(background1.png);
+	background-size: cover;
+	background-position: center;
+}
+.container{
+	padding: 10px 10px;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logo{
+	width: 280px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 25px;
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #bda79d;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+.header-text{
+	margin-top: 20%;
+	font-size: 40px;
+}
+.header-text h1{
+	font-size: 65px;
+	margin-top: 20px;
+}
+/*---------about----------*/
+#about{
+	padding: 80px 0;
+	color: #7e7f80; //kelabu
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; 
+}
+.about-col-1{
+	flex-basis: 35%;
+}
+.about-col-1 img{
+	width: 100%;
+	border-radius: 15px;
+}
+.about-col-2{
+	flex-basis: 60%;
+}
+tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #c2acac;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #E6C1B3;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ADA09B;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*---------projects----------*/
+#projects{
+	padding: 30px 0;
+}
+.projects-list{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 40px;
+	margin-top: 60px;
+}
+.projects-list div{
+	background: #e3dedc;
+	padding: 40px;
+	font-size:13px;
+	font-weight: 300;
+	border-right: 10px;	
+	transition: background 0.5s, transform 0.5s;
+}
+.projects-list div i{
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.projects-list diy h2{
+	font-size:30px;
+	font-weight:500;
+	margin-bottom:15px;
+}
+.projects-list div a{
+	text-decoration:none;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.projects-list div:hover{
+	background: #c7aba7;
+	transform: translateY(-10px);
+}
+/*---------portfolio----------*/
+#portfolio{
+	padding: 50px 0;
+}
+.work-list{
+display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 40px;
+	margin-top: 60px;
+}
+.work{
+	border-radius: 10px;
+	position:relative;
+	overflow: hidden;
+}
+.work img{
+	width: 40%;
+	border-radius: 10px;
+	display: inline-block;
+}
+/*---------contact----------*/
+.contact-left{
+	flex-basis: 35%;
+}
+.contact-left{
+	flex-basis: 60%;
+}
+.contact-left p{
+	margin-top: 30px;
+}
+.contact-left p i{
+	color: black;
+	margin-right:15px;
+	font-size:25px;
+}
+.social-icons{
+	margin-top: 30px;
+}
+.social-icons a{
+	text-decoration: none;
+	font-size:30px;
+	margin-right:15px;
+	color: black;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+.social-icons a:hover{
+	color: white;
+	transform: translateY(-5px);
+}
+.button {
+  border: none;
+  color: #C1A89C;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #A0D4C1;
+}
+
+.button1:hover {
+  background-color: #A0D4C1;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #9A908A;
+}
+
+.button2:hover {
+  background-color: #9A908A;
+  color: white;
+}
+
+}
+.contact-right form{
+	width: 100%;
+}
+form input, form textarea{
+	width: 100%;
+	border:0;
+	outline: none;
+	background: #D9BEBE;
+	padding: 15px;
+	margin:15px 0;
+	color: white;
+	font-size: 18px;
+	border-radius: 6px;
+}
+form.btn2{
+	padding:14px 60px;
+	font-size:18px;
+	margin-top: 20px;
+	cursor:pointer;
+}
+/*--------css for small screens-----*/
+nav.fas{
+	display: none;
+}
+nav.fas{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	#header{
+		background-image: url(user-background.png);
+	}
+	.header-text{
+		margin-top: 100%;
+		font-size: 16px;
+	}
+	.header-text h1{
+		font-size:30px;
+	}
+	nav.fas{
+		display: block;
+		font-size:25px;
+	}
+	nav ul{
+		background: #c7aba7;
+		position: fixed;
+		top: 0;
+		right: -200px;
+		width: 200px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: right 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin:25px;
+	}
+	nav ul.fas{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+}
+		
+
+
+	
+
+
+
+	
